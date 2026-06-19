@@ -81,4 +81,12 @@ def revisar_ssh():
     except Exception as e:
         print(f"  Error leyendo SSH config: {e}")
 
-def
+def main():
+    info_sistema()
+    listar_usuarios()
+    puertos_abiertos()
+    servicios_activos()
+    revisar_ssh()
+
+if __name__ == "__main__":
+    main()
